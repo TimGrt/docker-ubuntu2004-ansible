@@ -15,6 +15,7 @@ RUN apt-get update \
        python3-dev \
        python3-setuptools \
        python3-pip \
+       python3-apt \
        python3-yaml \
        software-properties-common \
        rsyslog systemd systemd-cron sudo iproute2 \
