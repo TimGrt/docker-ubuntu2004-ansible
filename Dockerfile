@@ -34,14 +34,14 @@ RUN locale-gen en_US.UTF-8
 
 ENV pip_packages "ansible"
 # Install Ansible via Pip.
-RUN pip3 install $pip_packages
+RUN pip3 install --no-cache-dir $pip_packages
 
 COPY initctl_faker .
 RUN chmod +x initctl_faker && rm -fr /sbin/initctl && ln -s /initctl_faker /sbin/initctl
 
 # Install Ansible inventory file.
 RUN mkdir -p /etc/ansible
-RUN echo "[local]\nlocalhost ansible_connection=local" > /etc/ansible/hosts
+RUN printf "[local]\nlocalhost ansible_connection=local\n" > /etc/ansible/hosts
 
 # Create `ansible` user with sudo permissions
 ENV ANSIBLE_USER=ansible
