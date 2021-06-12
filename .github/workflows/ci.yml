@@ -49,4 +49,4 @@ jobs:
           file: Dockerfile
           platforms: linux/amd64
           push: true
-          tags: timgrt/opensuse15-ansible:latest
+          tags: timgrt/ubuntu2004-ansible:latest
