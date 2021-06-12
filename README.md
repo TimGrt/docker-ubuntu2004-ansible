@@ -4,7 +4,7 @@ Ubuntu 20.04 LTS (Focal Fossa) Docker container for Ansible playbook and role te
 This container is used to test Ansible roles and playbooks (e.g. with molecule) running locally inside the container.  
 A non-priviledged user `ansible` is created with password-less sudo configured.
 
-![GitHub Workflow Status](https://img.shields.io/github/workflow/status/timgrt/docker-ubuntu2004-ansible/Docker%20Build%20and%20Publish) ![Docker Pulls](https://img.shields.io/docker/pulls/timgrt/ubuntu2004-ansible) ![CodeFactor Grade](https://img.shields.io/codefactor/grade/github/timgrt/docker-ubuntu2004-ansible/main)
+[![Docker Build and Publish](https://github.com/TimGrt/docker-ubuntu2004-ansible/actions/workflows/ci.yml/badge.svg)](https://github.com/TimGrt/docker-ubuntu2004-ansible/actions/workflows/ci.yml) ![Docker Pulls](https://img.shields.io/docker/pulls/timgrt/ubuntu2004-ansible) ![CodeFactor Grade](https://img.shields.io/codefactor/grade/github/timgrt/docker-ubuntu2004-ansible/main)
 
 ## Tags
 
